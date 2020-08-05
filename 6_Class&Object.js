@@ -127,7 +127,7 @@ rectangle.draw(); // drawing blue color of
 const triangle = new Rectangle(20, 20, "red");
 triangle.draw(); // drawing red color of
 console.log(triangle.getArea()); // 200
-console.log(triangle.draw()); // drawing red color of // 삼각형
+console.log(triangle.draw()); // drawing red color of | 삼각형
 
 // 6. Class checking: instanceOf
 console.log(rectangle instanceof Rectangle); // true

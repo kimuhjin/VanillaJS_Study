@@ -1,7 +1,12 @@
 // | 데이터타입, let vs var, hoisting | //
 
-const { runInThisContext } = require("vm");
-const { supportsHistory } = require("history/DOMUtils");
+// Note!
+// Immutable data types: primitive types, frozen objects (i.e object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+// favor immutable data type always for a few reason:
+// - security
+// - thread safety
+// - reduce human mistakes
 
 // Hoisting은 어디서 선언했는지에 상관없이 항상 제일 상단에 선언을 끌어 올려주는 것을 뜻한다.
 // var는 블럭 스코프가 없어서 어디에서나 사용 할 수 있다.(사용하지 않을 곳에서도 선언되어져 있기때문에, 프로그램 에러 도출의 위험성이 있다.)
